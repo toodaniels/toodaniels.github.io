@@ -1,0 +1,78 @@
+{
+    "courses": [
+        {
+            "title": "Curso de Next.js: Autenticación",
+            "description": "¡Aprende estrategias de autenticación con Next.js! Implementa sesiones o tokens para autenticar usuarios en las vistas y API de tu aplicación web.",
+            "platform": "platzi",
+            "link": "https://platzi.com/cursos/nextjs-auth/",
+            "status": "Active",
+            "type": "Web Development"
+           
+        },
+        {
+            "title": "Curso de AWS Redshift para Manejo de Big Data",
+            "description": "AWS Redshift es un data warehouse en la nube, completamente administrado, que te permite analizar petabytes de datos a través de SQL.",
+            "platform": "platzi",
+            "link": "https://platzi.com/cursos/redshift-big-data/",
+            "status": "Active",
+            "type": "Web Development"
+           
+        },
+        {
+            "title": "PySpark Tutorial",
+            "description": "Learn PySpark, an interface for Apache Spark in Python. PySpark is often used for large-scale data processing and machine learning.",
+            "platform": "frecodecamp",
+            "link": "https://www.youtube.com/watch?v=_C8kWso4ne4&t=12s",
+            "status": "Done",
+            "type": "Data Engineering"
+        },
+        {
+            "title": "Using Data Classes in Python",
+            "description": "One new and exciting feature that came out in Python 3.7 was the data class. A data class is a class typically containing mainly data, although there aren’t really any restrictions.",
+            "platform": "realpython",
+            "link": "https://realpython.com/courses/python-data-classes/",
+            "status": "Active",
+            "type": "Data Engineering"
+        },
+        {
+            "title": "Vim, aumenta tu velocidad de desarrollo",
+            "description": "Empieza siendo productivo con Vim en Linux, windows, Mac y Unix",
+            "platform": "udemy",
+            "link": "https://www.udemy.com/course/vim-aumenta-tu-velocidad-de-desarrollo/",
+            "status": "Done",
+            "type": "Software Engineering"
+        },
+        {
+            "title": "Curso de Ingeniería de Datos con Python",
+            "description": "Genera un set de datos capaz de generar predicciones a partir de algoritmos de machine learning.",
+            "platform": "platzi",
+            "link": "https://platzi.com/cursos/ingenieria-datos/",
+            "status": "Done",
+            "type": "Data Engineering"
+        },
+        {
+            "title": "Curso Profesional de Python",
+            "description": "Culmina tu aprendizaje sobre este vasto lenguaje de programación.",
+            "platform": "platzi",
+            "link": "https://platzi.com/cursos/python-profesional/",
+            "status": "Done",
+            "type": "Data Engineering"
+        },
+        {
+            "title": "Curso de Python Intermedio: Comprehensions, Lambdas y Manejo de Errores",
+            "description": "Fortalece tus habilidades para profesionalizarte con Python, uno de los lenguajes más utilizados en el mundo en desarrollo backend, ciencia de datos e inteligencia artificial.",
+            "platform": "platzi",
+            "link": "https://platzi.com/cursos/python-intermedio/",
+            "status": "Done",
+            "type": "Data Engineering"
+        },
+        {
+            "title": "Curso Profesional de Machine Learning con Scikit-Learn",
+            "description": "Scikit-Learn es una biblioteca de Python que ofrece un conjunto de algoritmos eficientes que pueden ser utilizados para realizar Machine Learning en un ambiente productivo.",
+            "platform": "platzi",
+            "link": "https://platzi.com/cursos/scikitlearn-ml/",
+            "status": "Started",
+            "type": "Data Engineering"
+        }
+    ]
+}
