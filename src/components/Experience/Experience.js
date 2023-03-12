@@ -10,7 +10,7 @@ const jobs = [
 			'Translation of jupyter notebooks to SQL Big query.',
 			'Design and implementation of ETL proccess and data pipelines from different DBMS such as MSSQL, DB2, etc.',
 			'Airflow Dag development using Astronomer with GCP services.',
-			'Data modeling for data lake use in GCP.'
+			'Data modeling for data lake use in GCP.',
 		],
 	},
 	{
@@ -71,38 +71,38 @@ const jobs = [
 // ChatGPT Function
 function formatDateDiff(date1, date2) {
 	// calculamos la diferencia en milisegundos
-	const diffMs = Math.abs(date1 - date2);
+	const diffMs = Math.abs(date1 - date2)
 
 	// calculamos los años, meses y días transcurridos
-	const diffDate = new Date(diffMs);
-	const years = diffDate.getUTCFullYear() - 1970;
-	const months = diffDate.getUTCMonth();
+	const diffDate = new Date(diffMs)
+	const years = diffDate.getUTCFullYear() - 1970
+	const months = diffDate.getUTCMonth()
 
 	// build the formatted result
-	let result = '';
+	let result = ''
 	if (years > 1) {
-		result = `${years} years`;
+		result = `${years} years`
 	} else if (years === 1) {
-		result = `${years} year`;
+		result = `${years} year`
 	}
 
 	if (months > 0) {
 		if (result !== '') {
-			result += ' and ';
+			result += ' and '
 		}
 		if (months > 0) {
 			if (result !== '') {
-				result += ' and ';
+				result += ' and '
 			}
 			if (months > 1) {
-				result += `${months} months`;
+				result += `${months} months`
 			} else {
-				result += `${months} month`;
+				result += `${months} month`
 			}
 		}
 	}
 
-	return result;
+	return result
 }
 
 const TimeJob = (props) => {
@@ -138,10 +138,11 @@ export default function Experience() {
 								<li key={index}>
 									<button
 										onClick={() => setActive(index)}
-										className={`inline-block rounded-lg py-1 px-2 text-sm ${active === index
-											? 'font-semibold text-slate-700 bg-emerald-500 text-gray-900 '
-											: 'text-gray-100'
-											}`}
+										className={`inline-block rounded-lg py-1 px-2 text-sm ${
+											active === index
+												? 'font-semibold text-slate-700 bg-emerald-500 text-gray-900 '
+												: 'text-gray-100'
+										}`}
 									>
 										{job.company}
 									</button>
@@ -152,8 +153,9 @@ export default function Experience() {
 
 					{jobs.map((job, index) => (
 						<div
-							className={`flex flex-col space-y-4 col-span-8 md:col-span-5  block mt-6 ${active === index ? '' : 'md:hidden'
-								}`}
+							className={`flex flex-col space-y-4 col-span-8 md:col-span-5  block mt-6 ${
+								active === index ? '' : 'md:hidden'
+							}`}
 							key={index}
 						>
 							<div className="flex flex-col space-y-1">
