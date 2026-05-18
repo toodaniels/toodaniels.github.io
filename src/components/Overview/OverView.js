@@ -20,10 +20,11 @@ export default function OverView() {
 						<span className="text-emerald-500 m-3">Daniel</span>
 					</h1>
 					<p className="mt-6 max-w-4xl text-lg text-gray-300">
-						I’m a passionate Software and Data engineer with 4+ years of
-						experience. I like to constantly learn about new technologies and
-						from my teammates, I enjoy sharing the knowledge on each opportunity
-						I have.
+						As a Senior Data &amp; Software Engineer, I combine 7+ years of
+						specialized experience in data architecture with a strong foundation
+						in full-stack development. This hybrid lens allows me to master the
+						entire data lifecycle—seamlessly bridging the gap from application
+						inception to high-impact strategic business value.
 					</p>
 					<div className="mt-10 flex gap-x-6 justify-center lg:justify-start">
 						<a

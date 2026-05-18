@@ -17,7 +17,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "feather-icons": "^4.29.0",
     "framer-motion": "^6",
-    "next": "12.2.5",
+    "next": "^14.2.35",
     "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",

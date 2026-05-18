@@ -7,10 +7,13 @@ const jobs = [
 		time: 'November 2022 - Present',
 		start: '01 November 2022',
 		items: [
-			'Translation of jupyter notebooks to SQL Big query.',
-			'Design and implementation of ETL proccess and data pipelines from different DBMS such as MSSQL, DB2, etc.',
-			'Airflow Dag development using Astronomer with GCP services.',
-			'Data modeling for data lake use in GCP.',
+			'Driving process automation for Python-based workflows using Astronomer-managed Apache Airflow on Google Cloud Platform (GCP), leveraging Dataproc and Google Cloud Storage (GCS) for scalable execution.',
+			'Designing and implementing robust data models and ensuring code standardization across data engineering scripts to enhance maintainability and performance.',
+			'Developing and optimizing automation scripts to streamline data operations and increase efficiency.',
+			'Performing complex data transformations utilizing Spark SQL and Hive on Dataproc, supporting critical analytical needs.',
+			'Leading significant data migration initiatives from diverse source systems, including SQL Server, DB2, and Excel, to integrate into our Data Mesh architecture.',
+			'Serving as a key member of the Data Engineering team dedicated to our most important client, ensuring high-quality data solutions and delivery.',
+			'Taking on tech lead responsibilities, including technical decision-making, team guidance, and implementing best practices in data engineering workflows.',
 		],
 	},
 	{
@@ -19,12 +22,15 @@ const jobs = [
 		time: 'April 2020 - November 2022',
 		start: '01 April 2020',
 		end: '01 November 2022',
+		description:
+			'As a Data Engineer, I am responsible for designing, implementing, and maintaining robust data solutions on AWS. My core focus includes:',
 		items: [
-			'Advanced Geospatial Data Cleaning and Analysis SQL (Postgis and Presto/Athena) on AWS.',
-			'ETLs with Python on AWS.',
-			'Data Pipelines using Apache Airflow on AWS and Custom operators to Apache Airflow.',
-			'Airflow deployments on AWS with Github actions.',
-			'Design Strategies to improve Python code implementations using Github actions.',
+			'Cleaning and analyzing geospatial data using Python and advanced SQL (specifically PostGIS and AWS Athena), ensuring data quality and readiness for analysis.',
+			'Designing and implementing end-to-end ETL processes on AWS to streamline data ingestion and transformation.',
+			'Developing and deploying resilient data pipelines orchestrated with Apache Airflow on AWS, guaranteeing efficient and scheduled data flows.',
+			"Extending Apache Airflow's functionality by creating custom operators to meet specific business needs and enhance automation capabilities.",
+			'Managing the full lifecycle of Airflow deployments and maintenance on AWS, leveraging GitHub Actions for seamless CI/CD.',
+			'Implementing strategies to enhance Python code quality and performance through automated workflows in GitHub Actions, fostering best practices and operational excellence.',
 		],
 	},
 	{
@@ -33,37 +39,29 @@ const jobs = [
 		time: 'March 2019 - March 2020',
 		start: '01 March 2019',
 		end: '01 March 2020',
+		description:
+			'As a Software Engineer, I focused on full-stack web development, containerized scientific workflows, and e-commerce optimization. My core focus included:',
 		items: [
-			'Web Development  ReactJS.',
-			'API Rest using NodeJS and MongoDB.',
-			'Python for Genomic Data Analysis with Docker on AWS.',
-			'MongoDB database administration on AWS.',
-			'Management of Wordpress Online store.',
+			'Designing, building, and deploying highly responsive Progressive Web Applications (PWAs) using React and Material-UI to ensure optimal user experiences.',
+			'Developing and deploying robust, scalable backend RESTful APIs using Node.js, Express, and MongoDB.',
+			'Architecting containerized workflows using Docker to deploy Python-based applications optimized for high-performance genomic data analysis.',
+			'Administering and optimizing MongoDB databases to ensure data integrity, high availability, and query performance.',
+			'Managing and customizing WooCommerce/WordPress online stores, improving checkout flows and site performance.',
 		],
 	},
 	{
 		title: 'Software Engineer',
 		company: 'Cenidet',
-		time: 'January 2018 - February 2019',
-		start: '01 January 2018',
+		time: 'August 2017 - February 2019',
+		start: '01 August 2017',
 		end: '01 February 2019',
+		description:
+			'As a Software Engineer at Cenidet, I focused on full-stack web and mobile development, open-source integration with FIWARE, and containerized cloud solutions. My core focus included:',
 		items: [
-			'Web Development ReactJS.',
-			'Api Rest using NodeJS with MySQL and CrateDB.',
-			'Python Web service to manage notifications for mobile applications using Firebase Cloud Messaging.',
-			'Web services Dockerizing and orchestration.',
-		],
-	},
-	{
-		title: 'Mobile Engineer',
-		company: 'Cenidet',
-		time: 'August  2017 - December 2017',
-		start: '01 August  2017',
-		end: '01 December 2017',
-		items: [
-			'Mobile Development using React Native for Android.',
-			'Api Rest Full using NodeJS and MongoDB.',
-			'NPM library to easy  integration with Fiware cloud.',
+			'Developing and maintaining open-source, highly reusable generic modules and applications powered by the FIWARE platform.',
+			'Building robust, cross-platform and full-stack solutions using a diverse technology stack including React, React Native, Java (Android), Node.js, Python, MongoDB, and MySQL.',
+			'Orchestrating and containerizing microservices using Docker to guarantee seamless portability and standardized deployment environments.',
+			'Leveraging Google Cloud and Firebase services for efficient web hosting, real-time database management, and scalable cloud functionalities.',
 		],
 	},
 ]
@@ -90,15 +88,10 @@ function formatDateDiff(date1, date2) {
 		if (result !== '') {
 			result += ' and '
 		}
-		if (months > 0) {
-			if (result !== '') {
-				result += ' and '
-			}
-			if (months > 1) {
-				result += `${months} months`
-			} else {
-				result += `${months} month`
-			}
+		if (months > 1) {
+			result += `${months} months`
+		} else {
+			result += `${months} month`
 		}
 	}
 
@@ -163,6 +156,11 @@ export default function Experience() {
 									{job.title} @ {job.company}
 								</h3>
 								<TimeJob start={job.start} end={job.end} />
+								{job.description && (
+									<p className="text-sm text-gray-300 mt-3 mb-1 font-light">
+										{job.description}
+									</p>
+								)}
 								<div className="leading-7 text-gray-400 mx-2">
 									<ul className="list-disc">
 										{job.items.map((item, index) => (

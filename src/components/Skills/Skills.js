@@ -25,8 +25,9 @@ export default function Skills() {
 								</p>
 							</dt>
 							<dd className="mt-2 ml-16 text-base text-gray-400">
-								Airflow, Advanced SQL; Postgres/Postgis, Athena/PrestoDB,
-								Snowflake, Pandas, ETL pipelines, MongoDB, Jupyter Notebook.
+								Airflow, BigQuery, DataProc, Snowflake, Advanced SQL;
+								Postgres/Postgis, MSSQL, Athena/PrestoDB, Pandas, ETL pipelines,
+								MongoDB, Jupyter Notebook.
 							</dd>
 						</div>
 
@@ -55,9 +56,10 @@ export default function Skills() {
 								</p>
 							</dt>
 							<dd className="mt-2 ml-16 text-base text-gray-400">
-								Docker, AWS; S3, Athena, ECR, ECS, Batch, Lambda, Route53,
-								Cloudfront, Cloudwatch, RDS, DynamoDB, Api Gateway, SQS, Glue,
-								Redshift, Github Actions, k8s, Heroku, Bash scripting.
+								Docker, AWS, GCP, Azure Functions, S3, Athena, ECR, ECS, Batch,
+								Lambda, Route53, Cloudfront, Cloudwatch, RDS, DynamoDB, Api
+								Gateway, SQS, Glue, Redshift, Github Actions, k8s, Heroku, Bash
+								scripting.
 							</dd>
 						</div>
 

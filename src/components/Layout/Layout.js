@@ -4,7 +4,7 @@ import Footer from '@components/Footer/Footer'
 function Layout({ children }) {
 	return (
 		<>
-			<div className="bg-slate-900 mx-auto  max-w-7xl">
+			<div className="bg-slate-900 mx-auto max-w-7xl">
 				<NavBar />
 				{children}
 				<Footer />

@@ -32,7 +32,7 @@ export default function MediaIcons({ textColor, hoverTextColor }) {
 	return (
 		<div className="flex md:gap-x-6">
 			{socialLinks.map((item, index) => (
-				<Link href={item.href} key={index} passHref>
+				<Link href={item.href} key={index} passHref legacyBehavior>
 					<a
 						href="replace"
 						className={`${_textColor} hover:${_hoverTextColor} mx-2 md:mx-0`}

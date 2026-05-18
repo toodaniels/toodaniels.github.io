@@ -11,7 +11,7 @@ export default function Example() {
 					<div className="flex items-center gap-x-5 md:gap-x-8">
 						{/* <div className="hidden md:block"> */}
 						<div>
-							<Link href="/" passHref>
+							<Link href="/" passHref legacyBehavior>
 								<a
 									href="replace"
 									className="inline-block rounded-lg py-1 px-2 font-extrabold text-gray-300 hover:bg-slate-100 hover:text-emerald-500"
